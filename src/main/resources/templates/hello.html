@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>第一个网页</title>
+</head>
+<script type="text/javascript" th:src="@{/js/jquery-2.0.3.js}"></script>
+<script th:inline="javascript">
+
+</script>
+<body>
+    <table>
+        <tr><td>姓名</td><td>感言</td><td>操作</td></tr>
+        <tr><td>花里胡哨</td><td th:text="${demo}"></td><td th:text="${hello}"></td></tr>
+        <tr><td><input value="欠点" th:href="@{/obtain}" type="button"/></td><td></td><td></td></tr>
+    </table>
+</body>
+</html>
